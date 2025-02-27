@@ -1,0 +1,360 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .form-container {
+            text-align: center;
+            padding: 20px;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuuIy6DGt1_dusSqfolIm1xPShWrquItf2Q&s");
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .form-container h1 {
+            color: orange;
+            font-size: 50px;
+        }
+
+        .form-container p {
+            font-size: 30px;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form label {
+            color: white;
+            text-align: left;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        select {
+            width: 106%;
+        }
+
+        button {
+            padding: 15px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: medium;
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Welcome to K2!</h1>
+        <p>Register Yourself</p>
+        <form id="registerForm">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="First Name" required>
+
+            <label for="middleName">Middle Name</label>
+            <input type="text" id="middleName" placeholder="Middle Name">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            
+
+            <label for="contact">Contact No.</label>
+            <input type="text" id="contact" placeholder="Contact No." required>
+
+            <label for="securityKey">Security Key</label>
+            <input type="password" id="securityKey" placeholder="Security Key for Balance Check" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="City" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .form-container {
+            text-align: center;
+            padding: 20px;
+            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuuIy6DGt1_dusSqfolIm1xPShWrquItf2Q&s");
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .form-container h1 {
+            color: orange;
+            font-size: 50px;
+        }
+
+        .form-container p {
+            font-size: 30px;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form label {
+            color: white;
+            text-align: left;
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        select {
+            width: 106%;
+        }
+
+        button {
+            padding: 15px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: medium;
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Welcome to K2!</h1>
+        <p>Register Yourself</p>
+        <form method="POST" action="/add-data">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="First Name" required>
+
+            <label for="middleName">Middle Name</label>
+            <input type="text" id="middleName" placeholder="Middle Name">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            
+
+            <label for="contact">Contact No.</label>
+            <input type="text" id="contact" placeholder="Contact No." required>
+
+            <label for="securityKey">Security Key</label>
+            <input type="password" id="securityKey" placeholder="Security Key for Balance Check" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="City" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+<!-- </body>
+</html> --> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Welcome to K2!</h1>
+        <p>Register Yourself</p>
+        <form id="registerForm">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" placeholder="First Name" required>
+
+            <label for="middleName">Middle Name</label>
+            <input type="text" id="middleName" placeholder="Middle Name">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="contact">Contact No.</label>
+            <input type="text" id="contact" placeholder="Contact No." required>
+
+            <label for="securityKey">Security Key</label>
+            <input type="password" id="securityKey" placeholder="Security Key" required>
+
+            <label for="city">City</label>
+            <input type="text" id="city" placeholder="City" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("registerForm").onsubmit = async function(event) {
+            event.preventDefault();
+            const formData = {
+                firstName: document.getElementById("firstName").value,
+                middleName: document.getElementById("middleName").value,
+                lastName: document.getElementById("lastName").value,
+                email: document.getElementById("email").value,
+                username: document.getElementById("username").value,
+                password: document.getElementById("password").value,
+                gender: document.getElementById("gender").value,
+                contact: document.getElementById("contact").value,
+                securityKey: document.getElementById("securityKey").value,
+                city: document.getElementById("city").value
+            };
+
+            const response = await fetch("/add-data", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(formData)
+            });
+
+            const result = await response.json();
+            alert(result.message);
+        };
+    </script>
+</body>
+</html>

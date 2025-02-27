@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+}
+.form-container {
+    text-align: center;
+    padding: 20px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCuuIy6DGt1_dusSqfolIm1xPShWrquItf2Q&s");
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container h1 {
+    color: orange;
+    font-size: 50px;
+}
+
+.form-container p {
+    font-size: 30px;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    color: white;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input, select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+select {
+    width: 106%;
+}
+
+button {
+    padding: 15px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #555;
+}
