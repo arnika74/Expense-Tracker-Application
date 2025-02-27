@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="checkLogin()">
+
+    <!-- Header Section -->
+    <header>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="expense.html">Expense</a>
+            <a href="report.html">Report</a>
+        </div>
+        <div class="nav-right">
+            <!-- <a href="#">Profile</a> -->
+            <a href="login.html"><button>Login</button></a>
+            <a href="signup.html"><button>Sign Up</button></a>
+        </div>
+
+        <div id="profile-section" style="display: none;">
+            <img src="profile.png" alt="Profile" id="profile-icon" onclick="toggleProfileMenu()">
+            <div class="profile-menu" id="profile-menu">
+                <a href="#">Change Password</a>
+                <a href="#" onclick="logout()">Logout</a>
+                <a href="#">Suggestions</a>
+            </div>
+        </div>
+
+        <!-- Popup Alert -->
+        <!-- <div id="popup" class="popup">
+            <p id="popup-message">Login First</p>
+            <button onclick="closePopup()">OK</button>
+        </div> -->
+    </header>
+
+    <!-- Image Slider -->
+    <section class="slider">
+        <div class="slides">
+            <img src="./images/image1.jpeg" alt="budget planning">
+            <img src="./images/image2.png" alt="budget planning">
+            <img src="./images/image4.jpeg" alt="calculation">
+            <img src="./images/image5.jpeg" alt="Expense Reports">
+            <img src="./images/image6.webp" alt="Expense Report chart">
+            <img src="./images/image7.jpeg" alt="money bag">
+            <img src="./images/image8.jpg" alt="Expenses">
+        </div>
+    </section>
+
+    <!-- Brief Info -->
+    <section class="info">
+        <img src="./images/k2.3a.jpg" alt="Logo">
+        <h2>Welcome to <b>K2</b></h2>
+        <p>Our Expense Tracker web app helps you easily manage finances and reduce financial stress</p>
+    </section>
+
+    <!-- Expense Form -->
+    
+    <section class="expense-form">
+        <h2>Track Your Expenses</h2>
+        <form>
+            <label for="budget">Set Your Budget:</label>
+            <input type="number" id="budget" placeholder="ex: 1000">
+
+            <label for="date">Date: <span class="required-star">*</span></label>
+            <input type="date" id="date" required>
+
+            <label for="payee">Payee: <span class="required-star">*</span></label>
+            <input type="text" id="payee" placeholder="ex: abc">
+
+            <label for="amount">Enter Amount: <span class="required-star">*</span></label>
+            <!-- <p style="color: white; text-align: left;">positive for income <br>negative for expense</p> -->
+            <!-- <p style="color: white;">negative for expense </p> -->
+            <select name="amount" id="amount" required>
+                <option value="select options">Select option</option>
+                <option value="Income">Income</option>
+                <option value="Expense">Expense</option>
+            </select>
+            <input type="number" id="amount" placeholder="ex: 100">
+
+            <label for="mode">Mode of Payment: <span class="required-star">*</span></label>
+            <select name="mode" id="mode" required>
+                <option value="select mode">Select Payment Mode</option>
+                <option value="cash">Cash</option>
+                <option value="cr">Credit Card</option>
+                <option value="db">Debit Card</option>
+                <option value="online ">Online Transfer</option>
+            </select>
+            <select name="category" id="category" required>
+                <option value="select mode">Select Category</option>
+                <option value="cash">Food</option>
+                <option value="cr">Transport</option>
+                <option value="db">Shopping</option>
+                <option value="online ">Cosmetics</option>
+                <option value="online ">Others</option>
+            </select>
+            <br><br>
+
+            <button type="submit">Enter</button> 
+            <br><br>
+            <button type="button" onclick="requestBalanceKey()">Check Your Balance</button>
+
+        </form>
+    <!-- </section>
+
+    
+    <section class="check-balance"> -->
+        
+    </section>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- add jS file in above code with material UI and smooth transition and 
+in above code make sure after login/sign up that option will not appear and user profile will shown at the right side and on hover that profile icon it shows 4 options for selection 
+make sure that user can add expense when he is login if he/she try to add expense without login give a alert message that you have to login first 
+and for balance check option after click on that it should ask for a key that will be made at time of registration if key is correct then you will check your balance
+give login and registration page on different file and login page contain username/email, password enter button if you dont have an account then registration page contain first name, middle name, last name, gender, email, contact no., username, password, security key, city option and after registration redirect to first page in which login/sign up option will not shown because you login to your account 
+
+give appropriate UI design and intuitive interface and also give js file on above description -->
+
+
+
+
